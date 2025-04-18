@@ -1,93 +1,93 @@
 const perguntas = [
     {
-      pergunta: 'O que o leleco mais gosta de fazer no fim de semana?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Jogar",
-        "Ver a mandy",
-        "Dormir",
+        "a",
+        "b",
+        "c",
       ],
       correta: 1
     },
     {
-      pergunta: 'O quanto o leleco ama a mandy?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Um tico",
-        "Absurdamente infinitamente inefavelmente",
-        "Muito mas nem tanto!",
+        "a",
+        "b",
+        "c",
       ],
       correta: 1
     },
     {
-      pergunta: 'Onde o leleco morava quando era criancinha?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Fortaleza",
-        "Horizonte",
-        "Cascavel",
+        "a",
+        "b",
+        "c",
       ],
       correta: 1
     },
     {
-      pergunta: 'Quais desses cantos leleco sonha em morar?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Canadá",
-        "Estados Unidos",
-        "Suíça",
-      ],
-      correta: 0
-    },
-    {
-      pergunta: 'Qual o jogo favorito de leleco',
-      respostas: [
-        "CS2",
-        "Valorant",
-        "Fifa",
-      ],
-      correta: 0
-    },
-    {
-      pergunta: 'Quais dessas coisas leleco mais gosta de fazer com a mandy?',
-      respostas: [
-        "Ler o livro do steller",
-        "Ver tiktok",
-        "Ver filmeco bom",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: 'Qual o maior sonho de leleco?',
-      respostas: [
-        "Ser o homem mais rico e influente do mundo",
-        "Dar orgulho pra família dele e pra da mandy e ser bem sucedido",
-        "Viajar o mundo todinho",
+        "a",
+        "b",
+        "c",
       ],
       correta: 1
     },
     {
-      pergunta: 'Qual a saga de livros favoritas de leleco?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Percy Jackson",
-        "Harry Potter",
-        "Desventuras em Série",
+        "a",
+        "b",
+        "c",
       ],
       correta: 1
     },
     {
-      pergunta: 'Qual a viagem dos sonhos de leleco com a mandy?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "Suíça no natal",
-        "Disney",
-        "O destino que a mandy escolher",
+        "a",
+        "b",
+        "c",
       ],
-      correta: 2
+      correta: 1
     },
     {
-      pergunta: 'Quem é a melhor namorada do mundo?',
+      pergunta: 'Resposta item b',
       respostas: [
-        "A mandyyyyy",
-        "A mandocaaaaaa",
-        "A minha plincesa perfeita mais linda do mundo maravilhosa que eu façõ de tudo",
+        "a",
+        "b",
+        "c",
       ],
-      correta: 2
+      correta: 1
+    },
+    {
+      pergunta: 'Resposta item b',
+      respostas: [
+        "a",
+        "b",
+        "c",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: 'Resposta item b',
+      respostas: [
+        "a",
+        "b",
+        "c",
+      ],
+      correta: 1
+    },
+    {
+      pergunta: 'Resposta item b',
+      respostas: [
+        "a",
+        "b",
+        "c",
+      ],
+      correta: 1
     }
   ];
   const quiz= document.querySelector('#quiz')

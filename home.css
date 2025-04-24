@@ -1,0 +1,32 @@
+body{
+    background-color: #0F172A;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #A3E635;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #334155; /* Cor ao passar o mouse */
+    color: whitesmoke;
+}
+h1{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}

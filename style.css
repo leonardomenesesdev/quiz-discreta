@@ -42,14 +42,28 @@ overflow: hidden;
 .quiz-item h3{
 padding: 16px 20px;
 color: #E2E8f0;
-
 display: flex;
 align-items: center;
-gap: 12px
-;
-
+gap: 8px;
 background-color: #33507e;
 }
+.quiz-item dt {
+    margin-bottom: 8px;
+  }
+  .quiz-item dt label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .quiz-item dt input[type="radio"] {
+    accent-color: limegreen; /* opcional: cor do botão selecionado */
+  }
+  
+  .quiz-item dt span {
+    display: inline-block;
+    white-space: nowrap; /* impede quebra de linha no texto */
+  }
 .quiz-item h3:before{
 counter-increment: quiz-item;
 content: counter(quiz-item);

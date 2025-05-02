@@ -122,8 +122,42 @@ background-color: #A3E635;
 border-radius: 50%;
 }
 
+/* Estilo para o container do botão */
+li.finalizar-container {
+  text-align: center;
+  margin-top: 32px; /* Espaço acima do botão */
+  margin-bottom: 32px; /* Espaço abaixo do botão */
+  list-style: none; /* Remove o marcador de lista */
+}
 
+/* Estilo atualizado para o botão */
+li.finalizar-container a[href="resolucoes.html"] {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-size: 16px;
+  min-width: 200px; /* Largura mínima para melhor aparência */
+}
 
+li.finalizar-container a[href="resolucoes.html"]:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+li.finalizar-container a[href="resolucoes.html"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 /*declaração*/
 #acertos {
 text-align: center;

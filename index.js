@@ -117,10 +117,10 @@ const perguntas = [
 const quiz = document.querySelector('#quiz');
 const template = document.querySelector('template');
 
-const corretas = new Set();
+const marcadas = new Set();
 const totalDePerguntas = perguntas.length;
 const mostrarTotal = document.querySelector('#acertos span');
-mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas;
+mostrarTotal.textContent = marcadas.size + ' de ' + totalDePerguntas;
 
 for (const item of perguntas) {
   const quizItem = template.content.cloneNode(true);
@@ -141,12 +141,8 @@ for (const item of perguntas) {
     dt.querySelector('span').textContent = resposta;
 
     dt.querySelector('input').onchange = (event) => {
-      const estaCorreta = Number(event.target.value) === item.correta;
-      corretas.delete(item);
-      if (estaCorreta) {
-        corretas.add(item);
-      }
-      mostrarTotal.textContent = corretas.size + ' de ' + totalDePerguntas;
+      marcadas.add(item)
+      mostrarTotal.textContent = marcadas.size + ' de ' + totalDePerguntas;
     };
 
     dl.appendChild(dt);
@@ -154,35 +150,13 @@ for (const item of perguntas) {
 
   dtBase.remove(); // Remove o exemplo original do template
 
-  // Botão de mostrar imagem
-  const mostrarImagemBtn = document.createElement('button');
-  mostrarImagemBtn.textContent = 'Mostrar Imagem';
 
-  mostrarImagemBtn.onclick = () => {
-    const imgExistente = quizContainer.querySelector('img');
-
-    if (imgExistente) {
-      imgExistente.remove(); // remove a imagem se já existe
-      mostrarImagemBtn.textContent = 'Mostrar Imagem'; // altera o texto do botão
-    } else {
-      const img = document.createElement('img');
-      img.src = "https://adimax.com.br/wp-content/uploads/2022/05/cuidados-filhote-de-cachorro.jpg";
-      img.alt = 'Imagem da questão';
-      img.style.maxWidth = '100%';
-      img.style.marginTop = '10px';
-      quizContainer.appendChild(img);
-
-      mostrarImagemBtn.textContent = 'Ocultar Imagem'; // altera o texto do botão
-    }
-  };
-
-  quizContainer.appendChild(mostrarImagemBtn);
   quiz.appendChild(quizItem);
 }
 // Adiciona o event listener para o botão de finalizar
 document.querySelector('.finalizar-container a').addEventListener('click', function(e) {
   // Salva os dados no localStorage antes do redirecionamento
-  localStorage.setItem('quizPontuacao', corretas.size);
+  localStorage.setItem('quizPontuacao', marcadas.size);
   localStorage.setItem('quizTotalPerguntas', totalDePerguntas);
 
   // O navegador continuará com o redirecionamento normal para resolucoes.html

@@ -118,6 +118,8 @@ const quiz = document.querySelector('#quiz');
 const template = document.querySelector('template');
 
 const marcadas = new Set();
+const corretas = new Set();
+
 const totalDePerguntas = perguntas.length;
 const mostrarTotal = document.querySelector('#acertos span');
 mostrarTotal.textContent = marcadas.size + ' de ' + totalDePerguntas;
@@ -143,6 +145,11 @@ for (const item of perguntas) {
     dt.querySelector('input').onchange = (event) => {
       marcadas.add(item)
       mostrarTotal.textContent = marcadas.size + ' de ' + totalDePerguntas;
+      const estaCorreta = Number(event.target.value) === item.correta
+      corretas.delete(item)
+      if(estaCorreta){
+        corretas.add(item)
+      }
     };
 
     dl.appendChild(dt);
@@ -156,9 +163,8 @@ for (const item of perguntas) {
 // Adiciona o event listener para o botão de finalizar
 document.querySelector('.finalizar-container a').addEventListener('click', function(e) {
   // Salva os dados no localStorage antes do redirecionamento
-  localStorage.setItem('quizPontuacao', marcadas.size);
+  localStorage.setItem('quizPontuacao', corretas.size);
   localStorage.setItem('quizTotalPerguntas', totalDePerguntas);
 
-  // O navegador continuará com o redirecionamento normal para resolucoes.html
-  // Não precisa de preventDefault() ou window.location
+ 
 });

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Revisão: Funções e Conjuntos</title>
-    <link rel="stylesheet" href="teoria.css">
+    <link rel="stylesheet" href="./assets/css/teoria.css">
 </head>
 <body>
     <div class="content">
         <h1>Revisão de Conteúdos</h1>
         <ul>
             <li><a href="#conj">Conjuntos</a></li>
+            <li><a href="#relacoes">Relações</a></li>
             <li><a href="#func">Funções</a></li>
         </ul>
         <section id="conj">
@@ -27,7 +28,21 @@
             </ul>
         
         </section>
-
+        <section id="relacoes">
+            <h2>📙 Relações</h2>
+            <p><span class="highlight">Relação:</span> Uma relação entre dois conjuntos A e B é um subconjunto do produto cartesiano A × B.</p>
+            <p><span class="highlight">Relação em A:</span> É uma relação onde os pares ordenados pertencem a A × A.</p>
+            <p><span class="highlight">Propriedades:</span></p>
+            <ul>
+                <li><strong>Reflexiva:</strong> Todo elemento está relacionado consigo mesmo. ∀a ∈ A, (a, a) ∈ R.</li>
+                <li><strong>Simétrica:</strong> Se (a, b) ∈ R, então (b, a) ∈ R.</li>
+                <li><strong>Antissimétrica:</strong> Se (a, b) ∈ R e (b, a) ∈ R, então a = b.</li>
+                <li><strong>Transitiva:</strong> Se (a, b) ∈ R e (b, c) ∈ R, então (a, c) ∈ R.</li>
+            </ul>
+            <p><span class="highlight">Relação de equivalência:</span> É reflexiva, simétrica e transitiva.</p>
+            <p><span class="highlight">Relação de ordem:</span> É reflexiva, antissimétrica e transitiva.</p>
+        </section>
+        
         <section id="func">
             <h2>📗 Funções</h2>
             <p><span class="highlight">Função:</span> relação que associa cada elemento do domínio a um único do contradomínio.</p>
@@ -42,7 +57,7 @@
             <p><span class="highlight">Composição:</span> (f ∘ g)(x) = f(g(x)). A composição é associativa.</p>
         </section>
 
-        <button onclick="window.location.href='home.html'">Home</button>
+        <button onclick="window.location.href='index.html'">Voltar ao início</button>
     </div>
 </body>
 </html>

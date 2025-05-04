@@ -15,7 +15,7 @@ const foto6 = "https://cdn.discordapp.com/attachments/1335943523459141664/136836
 const foto7 = "https://cdn.discordapp.com/attachments/1335943523459141664/1368362393213735013/image.jpg?ex=6817f249&is=6816a0c9&hm=c71d16b708a9c4973515fb763922c841a69ef3624987ce27e823afaca4f652bc&";
 const foto8 = "https://cdn.discordapp.com/attachments/1335943523459141664/1368362392513417276/image.jpg?ex=6817f249&is=6816a0c9&hm=685f879af4f3241e1a34520b5c6aebeddc48c348fbe44e913333f8b334a5e606&";
 const foto9 = "https://cdn.discordapp.com/attachments/1335943523459141664/1368362392097918996/image.jpg?ex=6817f249&is=6816a0c9&hm=ae7650d64546791f4d0336180136ae0b0716b32ec45814d1a2630c37ab4428ef&";
-const foto10 = "https://cdn.discordapp.com/attachments/1335943523459141664/1367896546963623936/3b164860-7971-44ad-ae5c-3ffcac8f8d5c.jpg?ex=6816406f&is=6814eeef&hm=6a3341de9a32c9aa435531671aebb7369e5d5b1470c2b61940c0b27044026c01&";
+const foto10 = "https://cdn.discordapp.com/attachments/842378067572686881/1368602244202627112/res.jfif?ex=6818d1aa&is=6817802a&hm=0d3a4c4ef9aeada64f8955d467d3466f8ba91da1b294c3119a34f69337f5d64d&";
 
 // Array de perguntas (o mesmo do seu quiz principal)
 const perguntas = [

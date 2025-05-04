@@ -23,50 +23,61 @@ const perguntas = [
     pergunta: "Sobre operações com conjuntos, é correto afirmar que:",//Q1
     correta: "b) A interseção de dois conjuntos contém apenas elementos comuns a ambos.",
     imagemResolucao: foto1
+    imagemResolucao: foto1
   },
   {
     pergunta: "Uma relação é dita reflexiva quando:",//Q2
     correta: "b) Todo elemento está relacionado consigo mesmo.",
+    imagemResolucao: foto2
     imagemResolucao: foto2
   },
   {
     pergunta: "Se uma função associa elementos diferentes de seu domínio a um único elemento de sua imagem, ela é chamada de:",//Q3
     correta: "a) Injetora",
     imagemResolucao: foto3
+    imagemResolucao: foto3
   },
   {
     pergunta: "Sobre funções bijetoras, podemos afirmar que:",//Q4
     correta: "c) São simultaneamente injetoras e sobrejetoras.",
+    imagemResolucao: foto4
     imagemResolucao: foto4
   },
   {
     pergunta: "Em relação a funções compostas, é correto dizer que:",//Q5
     correta: "c) A composição de funções é associativa.",
     imagemResolucao: foto5
+    imagemResolucao: foto5
   },
   {
     pergunta: "Qual das opções caracteriza uma sequência aritmética?",//Q6
     correta: "b) A diferença entre dois termos consecutivos é constante.",
+    imagemResolucao: foto6
     imagemResolucao: foto6
   },
   {
     pergunta: "Uma sequência geométrica é definida quando:",//Q7
     correta: "b) A razão entre termos consecutivos é constante.",
     imagemResolucao: foto7
+    imagemResolucao: foto7
   },
   {
     pergunta: "Uma relação é dita simétrica quando:",//Q8
     correta: "a) Se (a, b) pertence à relação, então (b, a) também pertence.",
+    imagemResolucao: foto8
     imagemResolucao: foto8
   },
   {
     pergunta: "Um subconjunto de um conjunto A é:",//Q9
     correta: "b) Um conjunto que possui apenas elementos que pertencem a A.",
     imagemResolucao: foto9
+    imagemResolucao: foto9
   },
   {
     pergunta: "Uma função inversa de uma função bijetora f é definida como:",//Q10
     correta: "a) uma função que associa cada elemento do contradomínio de f ao seu respectivo elemento do domínio de f.",
+    imagemResolucao: foto10
+  }
     imagemResolucao: foto10
   }
 
